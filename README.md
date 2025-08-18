@@ -7,3 +7,5 @@ Offered by [Unity's Junior Programmer Pathway](https://learn.unity.com/pathway/j
 [![Watch the video](https://img.youtube.com/vi/IKXY7uTB_Fs/hqdefault.jpg)](https://www.youtube.com/watch?v=IKXY7uTB_Fs "Play on YouTube")
 
 The following contains the following projects in the Junior Programmer Pathway.
+
+## Contents
