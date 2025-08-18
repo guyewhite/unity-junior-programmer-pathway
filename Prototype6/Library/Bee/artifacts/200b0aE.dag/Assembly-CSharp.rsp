@@ -397,7 +397,10 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.11f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Challenge 1/Scripts/FollowPlayerX.cs"
 "Assets/Challenge 1/Scripts/PlayerControllerX.cs"
+"Assets/Scripts/DestroyOutOfBounds.cs"
+"Assets/Scripts/DetectCollisions.cs"
 "Assets/Scripts/FollowPlayer.cs"
+"Assets/Scripts/ObjectPooler.cs"
 "Assets/Scripts/PlayerController.cs"
 -langversion:9.0
 /deterministic
