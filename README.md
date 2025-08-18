@@ -9,3 +9,6 @@ Offered by [Unity's Junior Programmer Pathway](https://learn.unity.com/pathway/j
 The following contains the following projects in the Junior Programmer Pathway.
 
 ## Contents
+
+### Challenge 5
+A food-themed clicking game challenge where players must click on falling food items while avoiding skulls. This challenge focuses on UI interactions, difficulty settings, and game state management.
