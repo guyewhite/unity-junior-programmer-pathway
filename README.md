@@ -4,10 +4,6 @@ Offered by [Unity's Junior Programmer Pathway](https://learn.unity.com/pathway/j
 
 "Welcome to Junior Programmer! Designed for anyone interested in learning to code or obtaining an entry-level Unity role, this pathway assumes a basic knowledge of Unity and has no math prerequisites. Junior Programmer prepares you to get Unity Certified so that you can demonstrate your job-readiness to employers."
 
-<iframe width="560" height="315"
-        src="https://www.youtube.com/embed/IKXY7uTB_Fs"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+[![Watch the video](https://img.youtube.com/vi/IKXY7uTB_Fs/hqdefault.jpg)](https://www.youtube.com/watch?v=IKXY7uTB_Fs "Play on YouTube")
 
 The following contains the following projects in the Junior Programmer Pathway.
