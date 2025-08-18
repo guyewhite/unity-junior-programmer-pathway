@@ -23,9 +23,9 @@ public class GameManagerX : MonoBehaviour
     private float minValueY = -3.75f; //  y value of the center of the bottom-most square
     
     // Start the game, remove title screen, reset score, and adjust spawnRate based on difficulty button clicked
-    public void StartGame()
+    public void StartGame(int difficulty)
     {
-        spawnRate /= 5;
+        spawnRate = spawnRate / difficulty;
         isGameActive = true;
         StartCoroutine(SpawnTarget());
         score = 0;
@@ -67,24 +67,25 @@ public class GameManagerX : MonoBehaviour
     }
 
     // Update score with value from target clicked
-    public void UpdateScore(int scoreToAdd)
-    {
-        score += scoreToAdd;
-        scoreText.text = "score";
-    }
+ public void UpdateScore(int scoreToAdd)
+  {
+    score += scoreToAdd;
+    scoreText.text = "Score: " + score;
+  }
 
     // Stop game, bring up game over text and restart button
     public void GameOver()
     {
         gameOverText.gameObject.SetActive(true);
-        restartButton.gameObject.SetActive(false);
+        restartButton.gameObject.SetActive(true);
         isGameActive = false;
     }
 
     // Restart game by reloading the scene
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+  public void RestartGame()
+  {
+    // Reload the current scene
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+  }
 
 }

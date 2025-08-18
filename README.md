@@ -19,3 +19,9 @@ A food-themed clicking game challenge where players must click on falling food i
 - Added Challenge 5 project files from Unity Learn's Junior Programmer Pathway
 - Set up project structure with proper .gitignore for Unity projects
 - Initialized repository with base Unity project files
+- Completed Challenge 5: Fixed clicking game bugs
+  - Fixed difficulty selection to properly adjust spawn rates
+  - Corrected score display to show actual score value
+  - Changed target interaction from hover to click for proper gameplay
+  - Enabled restart button functionality after game over
+  - Added proper difficulty scaling to game mechanics
