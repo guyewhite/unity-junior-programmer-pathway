@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CongratScript : MonoBehaviour
@@ -6,7 +7,7 @@ public class CongratScript : MonoBehaviour
     public TextMesh Text;
     public ParticleSystem SparksParticles;
     
-    private List<string> TextToDisplay;
+    private List<string> TextToDisplay = new List<string>();
     
     private float RotatingSpeed;
     private float TimeToNextText;
@@ -16,12 +17,12 @@ public class CongratScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TimeToNextText = 0.0f;
-        CurrentText = 0
+        TimeToNextText = 1.0f;
+        CurrentText = 0;
         
-        RotatingSpeed = 1.0;
+        RotatingSpeed = 1.0f;
 
-        TextToDisplay.Add("Congratulation");
+        TextToDisplay.Add("Congratulations");
         TextToDisplay.Add("All Errors Fixed");
 
         Text.text = TextToDisplay[0];
@@ -36,15 +37,24 @@ public class CongratScript : MonoBehaviour
 
         if (TimeToNextText > 1.5f)
         {
-            TimeToNextText = 0.0f;
+            TimeToNextText = 1.0f;
             
             CurrentText++;
             if (CurrentText >= TextToDisplay.Count)
             {
                 CurrentText = 0;
-
+            }   
 
             Text.text = TextToDisplay[CurrentText];
+
+            RotatingSpeed += 10f;
+
+            if (RotatingSpeed > 360.0f) // 360 degrees is a full rotation in Unity  
+            {
+                RotatingSpeed = 0.0f;
+            }
+
+            Text.transform.rotation = Quaternion.Euler(0, 0, RotatingSpeed);
         }
     }
 }
