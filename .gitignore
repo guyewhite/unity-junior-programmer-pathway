@@ -97,3 +97,9 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Unity generated folders for Error Project
+ErrorProject/My project/Library/
+ErrorProject/My project/Temp/
+ErrorProject/My project/Logs/
+ErrorProject/My project/MemoryCaptures/

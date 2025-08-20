@@ -15,6 +15,12 @@ A food-themed clicking game challenge where players must click on falling food i
 
 ## Progress Log
 
+### 2025-08-20
+- Started Error Project: Unity debugging exercise
+  - Added CongratScript.cs with syntax errors for debugging practice
+  - Included particle effects and text mesh components
+  - Set up project files and meta data
+
 ### 2025-08-18
 - Added Challenge 5 project files from Unity Learn's Junior Programmer Pathway
 - Set up project structure with proper .gitignore for Unity projects
