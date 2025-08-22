@@ -1,0 +1,27 @@
+Prototype 7 - Game Design Document
+
+Overview
+This prototype demonstrates a physics-based counting system where players interact with falling objects in a 3D environment. The core gameplay revolves around spawning spheres that fall through a trigger zone, incrementing a counter each time they pass through. The system combines user input, physics simulation, and UI feedback to create a simple but complete game loop.
+
+Core Mechanics
+The game uses a trigger-based detection system to count objects. When the player presses the space bar, a sphere spawns at a predetermined height and falls due to gravity. As it falls, it passes through an invisible trigger zone that detects the collision and increments the counter. The current count displays on screen, giving immediate feedback to the player. Once spheres reach ground level, they're automatically destroyed to prevent memory buildup and maintain performance.
+
+Technical Implementation
+The Counter script handles collision detection through Unity's OnTriggerEnter method. It maintains a running count and updates the UI text component whenever a new object enters its trigger zone. The script attaches to any GameObject with a box collider set as a trigger, making it flexible for different level designs.
+
+The SphereDropper script manages the spawning system. It listens for space bar input using Unity's new Input System and instantiates sphere prefabs at a specified height. Each spawned sphere automatically receives a Rigidbody component for physics simulation and a SphereDestroyer component for cleanup. The script includes a cooldown system to prevent spam and maintains consistent spawn positions relative to its GameObject.
+
+The SphereDestroyer component monitors each sphere's vertical position every frame. When a sphere falls below the destroy threshold, typically at ground level, the component removes it from the scene. This automatic cleanup prevents the scene from becoming cluttered with unused objects and keeps the game running smoothly.
+
+The Move script provides additional dynamics by animating objects back and forth along the x-axis. Objects move a specified distance from their starting position before reversing direction, creating predictable movement patterns. This can be attached to platforms or obstacles to add complexity to the falling sphere gameplay.
+
+Game Flow
+Players start with a count of zero displayed on screen. Pressing space spawns a sphere above the play area, which falls and triggers the counter as it passes through the detection zone. The count increments and displays the new value immediately. Players can continue spawning spheres at regular intervals, watching the count grow. Spheres that reach the ground disappear automatically, keeping the play area clean for continued gameplay.
+
+Design Considerations
+The spawn height of 10 units gives spheres enough fall time to be visually interesting without making players wait too long. The destroy height at zero corresponds to ground level in most Unity scenes, creating a natural endpoint for each sphere's journey. The cooldown between spawns prevents the physics engine from being overwhelmed while still allowing rapid gameplay. All parameters are exposed in the Unity Inspector, allowing designers to tweak values without modifying code.
+
+The system separates concerns effectively. The Counter only handles counting, the SphereDropper only manages spawning, and the SphereDestroyer only deals with cleanup. This modular approach makes the system easy to extend or modify. Designers could add particle effects, sound effects, or different object types without changing the core functionality.
+
+Future Possibilities
+The current system provides a foundation for various game types. It could become a timing game where players must maintain a specific spawn rate. Adding the Move script to the trigger zone would create a moving target challenge. Multiple trigger zones could track different scores simultaneously. The sphere prefab could be replaced with different objects that fall at various speeds or have special properties. The counter could trigger events at certain milestones, unlocking new features or changing gameplay dynamics.
