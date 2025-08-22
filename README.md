@@ -13,7 +13,28 @@ The following contains the following projects in the Junior Programmer Pathway.
 ### Challenge 5
 A food-themed clicking game challenge where players must click on falling food items while avoiding skulls. This challenge focuses on UI interactions, difficulty settings, and game state management.
 
+### Error Project
+A Unity debugging exercise designed to teach developers how to identify and fix common compilation errors in C# scripts. Includes practice with syntax errors, missing references, and proper Unity component setup.
+
+### Prototype 1
+Car driving simulation introducing fundamental Unity concepts including transforms, physics, and basic player input controls.
+
+### Prototype 6
+Advanced Unity game mechanics implementation featuring object pooling, collision detection, boundary management, and optimized performance techniques.
+
+### Prototype 7 - Counting Project
+An interactive counting system that tracks collisions with objects in a 3D environment. Features a trigger-based counter with UI display showing real-time count updates when spheres pass through a designated area.
+
 ## Progress Log
+
+### 2025-08-22
+- Started Prototype 7: Counting Project implementation
+  - Created interactive counting system with trigger-based collision detection
+  - Added Counter.cs script to track and display collision counts
+  - Set up 3D environment with physics-enabled spheres
+  - Implemented UI text display for real-time count updates
+  - Configured box collider trigger zone for object detection
+  - Added Unity scene with multiple falling spheres for testing counter functionality
 
 ### 2025-08-20
 - Started Error Project: Unity debugging exercise
@@ -28,6 +49,12 @@ A food-themed clicking game challenge where players must click on falling food i
   - Fixed bracket misalignment in Update method
   - Initialized List<string> to prevent null reference exceptions
   - Added text rotation animation with Quaternion.Euler
+- Finished Error Project: Completed Unity debugging challenge
+  - Built WebGL version of the project
+  - Created build profiles for web deployment
+  - Updated Unity project settings and dependencies
+  - Upgraded Universal Render Pipeline settings
+  - Successfully exported project with all fixes applied
 
 ### 2025-08-18
 - Added Challenge 5 project files from Unity Learn's Junior Programmer Pathway

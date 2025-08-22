@@ -103,3 +103,10 @@ ErrorProject/My project/Library/
 ErrorProject/My project/Temp/
 ErrorProject/My project/Logs/
 ErrorProject/My project/MemoryCaptures/
+
+# Unity generated folders for all projects
+**/Library/
+**/Temp/
+**/Logs/
+**/MemoryCaptures/
+**/UserSettings/
